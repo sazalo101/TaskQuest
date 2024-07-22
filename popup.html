@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TaskQuest</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>TaskQuest</h1>
+    <div id="stats">
+      <p>Level: <span id="level">1</span></p>
+      <p>XP: <span id="xp">0</span> / <span id="next-level-xp">100</span></p>
+    </div>
+    <div id="progress-bar">
+      <div id="progress"></div>
+    </div>
+    <div id="task-management">
+      <input type="text" id="new-task" placeholder="Enter a new task">
+      <button id="add-task">Add Task</button>
+      <ul id="task-list"></ul>
+    </div>
+    <div id="achievements">
+      <h2>Achievements</h2>
+      <ul id="achievements-list"></ul>
+    </div>
+    <div id="theme-selector">
+      <label for="theme-select">Theme:</label>
+      <select id="theme-select">
+        <option value="default">Default Theme</option>
+        <option value="dark">Dark Theme</option>
+        <option value="fantasy">Fantasy Theme</option>
+      </select>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

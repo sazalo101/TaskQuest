@@ -1,0 +1,104 @@
+body {
+    width: 300px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  #progress-bar {
+    width: 100%;
+    background-color: #f0f0f0;
+    height: 20px;
+    margin-bottom: 10px;
+  }
+  
+  #progress {
+    width: 0%;
+    height: 100%;
+    background-color: #4CAF50;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #task-management {
+    margin-top: 20px;
+  }
+  
+  #new-task {
+    width: 70%;
+    padding: 5px;
+  }
+  
+  #add-task {
+    width: 25%;
+  }
+  
+  #task-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  #achievements {
+    margin-top: 20px;
+  }
+  
+  #achievements-list {
+    padding-left: 20px;
+  }
+  
+  #theme-selector {
+    margin-top: 20px;
+  }
+  
+  /* Themes */
+  .theme-default {
+    background-color: white;
+    color: black;
+  }
+  
+  .theme-dark {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .theme-dark button {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .theme-dark button:hover {
+    background-color: #45a049;
+  }
+  
+  .theme-fantasy {
+    background-color: #fdf1dc;
+    color: #8b4513;
+    font-family: 'Luminari', fantasy;
+  }
+  
+  .theme-fantasy button {
+    background-color: #8b4513;
+    color: #fdf1dc;
+  }
+  
+  .theme-fantasy button:hover {
+    background-color: #a0522d;
+  }

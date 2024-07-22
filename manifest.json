@@ -1,0 +1,33 @@
+
+{
+    "manifest_version": 2,
+    "name": "TaskQuest",
+    "version": "1.0",
+    "description": "Gamify your productivity tasks!",
+    "permissions": [
+      "storage",
+      "notifications",
+      "tabs",
+      "https://*.todoist.com/*",
+      "https://*.trello.com/*",
+      "https://*.asana.com/*"
+    ],
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/16.png",
+        "48": "images/48.png",
+        "128": "images/128.png"
+      }
+    },
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://*.todoist.com/*", "https://*.trello.com/*", "https://*.asana.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
